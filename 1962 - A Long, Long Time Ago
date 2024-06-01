@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int N;
+    scanf("%d",&N);
+
+    for(int i=1; i<=N; i++){
+        int T;
+        scanf("%d",&T);
+        int ans = 2015 - T;
+        if(ans>0){
+            printf("%d D.C.\n",ans);
+        }
+        else{
+            ans = abs(ans);
+            printf("%d A.C.\n",ans+1);
+        }
+    }
+}
